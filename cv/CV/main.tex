@@ -1,0 +1,224 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,russian]{babel}
+\usepackage{fontawesome5}
+
+
+\usepackage[scale=0.90,lf]{FiraMono}
+
+
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large 
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\
+      \textit{#3} & {\color{dark-grey} \small #4}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge Доржиева Дари} \\ \vspace{5pt}
+    \small 
+    \faGithub \hspace{2pt} \href{https://github.com/LordGum}{\myuline{github.com/LordGum}} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \href{mailto:dari.vision@mail.ru}{\myuline{dari.vision@mail.ru}} \hspace{1pt} $|$ 
+    \hspace{1pt} \faTelegram \hspace{2pt} \href{https://t.me/dari_vision}{\myuline{@dari\_vision}}
+    \\ \vspace{-3pt}
+\end{center}
+
+
+
+\section{ОБРАЗОВАНИЕ}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {НИУ ВШЭ, Факультет компьютерных наук}{2025 -- н.в.}
+        {Прикладная математика и информатика}{Москва}
+\resumeSubHeadingListEnd
+
+
+\section{ОПЫТ}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Яндекс}{Зима 2024 -- 2025}
+        {Мобильный разработчик (стажёр)}{Москва}
+        \resumeItemListStart
+            \resumeItem{Стажировка в качестве мобильного разработчика, 3 месяца}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Летняя школа по мобильной разработке}{2024}
+        {Участник}{}
+        \resumeItemListStart
+            \resumeItem{Прошла 3-месячное обучение по мобильной разработке}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+\section{ПРОЕКТЫ}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{ML005 Titanic Spaceship}}{}
+        \resumeItemListStart
+            \resumeItem{\href{https://github.com/LordGum/ML005_Titanic_Shaceship}{Ссылка на проект} --- Stacking \& Blending}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{ML004 Mushrooms}}{}
+        \resumeItemListStart
+            \resumeItem{\href{https://github.com/LordGum/ML004_Mushrooms}{Ссылка на проект} --- градиентный бустинг}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{ML001 Penguins Classification}}{}
+        \resumeItemListStart
+            \resumeItem{\href{https://github.com/LordGum/ML001_Penguins_classification-}{Ссылка на проект} --- решающие деревья}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{ML002 House Price}}{}
+        \resumeItemListStart
+            \resumeItem{\href{https://github.com/LordGum/ML002_House-price}{Ссылка на проект} --- градиентный бустинг}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{ML003 Titanic}}{}
+        \resumeItemListStart
+            \resumeItem{\href{https://github.com/LordGum/ML003_Titanic}{Ссылка на проект} --- логистическая регрессия}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading
+        {\textbf{Распознавание цифр MNIST}}{}
+        \resumeItemListStart
+            \resumeItem{Accuracy $\sim$ 92\% --- компьютерное зрение}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+\section{НАВЫКИ}
+\begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+        \textbf{Инструменты и языки:} Git, Python, C++, PyTorch, NumPy, Pandas, Matplotlib \vspace{2pt} \\
+        \textbf{Классический ML:} Логистическая регрессия, Градиентный бустинг, Решающие деревья, Stacking, Blending
+    }}
+\end{itemize}
+
+
+\section{ПРОЙДЕННЫЕ ПРЕДМЕТЫ}
+\resumeSubHeadingListStart
+    \begin{minipage}[t]{0.48\textwidth}
+        \resumeProjectHeading
+            {\textbf{В НИУ ВШЭ}}{}
+        \resumeItemListStart
+            \resumeItem{Линейная алгебра --- 10/10}
+            \resumeItem{Дискретная математика --- 9/10}
+            \resumeItem{Математический анализ --- 10/10}
+            \resumeItem{Алгоритмы и структуры данных --- 8/10}
+            \resumeItem{Python --- 10/10}
+            \resumeItem{C++ --- 9/10}
+        \resumeItemListEnd
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \resumeProjectHeading
+            {\textbf{Самостоятельно}}{}
+        \resumeItemListStart
+            \resumeItem{Машинное обучение}
+            \resumeItem{Python \& Pandas}
+            \resumeItem{Лекции от Соколова (ВШЭ)}
+            \resumeItem{Компьютерное зрение}
+        \resumeItemListEnd
+    \end{minipage}
+\resumeSubHeadingListEnd
+
+
+\end{document}
