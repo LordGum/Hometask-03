@@ -1,0 +1,26 @@
+name: Build Resume with Docker
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t resume-builder .
+
+      - name: Compile PDF
+        run: |
+          docker run --name builder resume-builder
+          docker cp builder:/resume/main.pdf ./resume.pdf
+          docker rm builder
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: resume.pdf
